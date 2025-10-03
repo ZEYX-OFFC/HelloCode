@@ -8,7 +8,7 @@ export default function ModelPicker({
   value,
   onChange,
 }: {
-  models: readonly M[];
+  models: { id: string; name: string }[];
   value: string;
   onChange: (v: string) => void;
 }) {
