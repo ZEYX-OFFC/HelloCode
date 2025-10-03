@@ -1,8 +1,6 @@
 "use client";
 import { ChevronDown } from "lucide-react";
 
-type M = { id: string; name: string };
-
 export default function ModelPicker({
   models,
   value,
