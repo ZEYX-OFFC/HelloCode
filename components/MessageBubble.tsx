@@ -19,7 +19,7 @@ export default function MessageBubble({ role, content }: Props) {
       >
         <ReactMarkdown
           components={{
-            code({ node, inline, className, children, ...props }) {
+            code({ inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
                 <SyntaxHighlighter
