@@ -14,7 +14,7 @@ const MODELS = [
   { id: "tngtech/deepseek-r1t2-chimera:free", name: "Deepseek R1T2" },
   { id: "qwen/qwen3-coder:free", name: "Qwen3 Coder" },
   { id: "openai/gpt-oss-20b:free", name: "ChatGPT OSS 20B" },
-] as const;
+];
 
 export default function Home() {
   const [input, setInput] = useState("");
