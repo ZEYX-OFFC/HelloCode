@@ -5,6 +5,7 @@ import MessageBubble from "@/components/MessageBubble";
 import ModelPicker from "@/components/ModelPicker";
 import SendButton from "@/components/SendButton";
 import { Plus } from "lucide-react";
+import Image from "next/image";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -60,7 +61,7 @@ export default function Home() {
       {/* HEADER */}
       <header className="flex items-center justify-between px-4 py-3 border-b bg-white shrink-0">
         <div className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="logo" className="w-7 h-7" />
+          <Image src="/images/logo.png" alt="logo" className="w-7 h-7" />
           <h1 className="font-semibold hidden sm:block">HelloCode</h1>
         </div>
         <ModelPicker models={MODELS} value={model} onChange={setModel} />
