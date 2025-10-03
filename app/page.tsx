@@ -64,7 +64,7 @@ export default function Home() {
           <Image src="/images/logo.png" alt="logo" className="w-7 h-7" />
           <h1 className="font-semibold hidden sm:block">HelloCode</h1>
         </div>
-        <ModelPicker models={MODELS} value={model} onChange={setModel} />
+         <ModelPicker models={MODELS as { id: string; name: string }[]} value={model} onChange={setModel} />
       </header>
 
       {/* CHAT AREA */}
